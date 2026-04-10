@@ -1,6 +1,6 @@
 # OpenAqua: A Large-Scale Fine-Grained Dataset and Benchmark for Open Underwater Visual Perception
 <div align="center">
-  <img src="./radar" alt="Model Performance Across Taxonomic Levels" width="400">
+  <img src="./radar.png" alt="Model Performance Across Taxonomic Levels" width="400">
   <p><em>Cross-level zero-shot performance evaluation</em></p>
 </div>
 ## 1. Introduction

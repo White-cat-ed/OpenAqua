@@ -1,6 +1,6 @@
 # OpenAqua: A Large-Scale Fine-Grained Dataset and Benchmark for Open Underwater Visual Perception
 
-![Cross-level zero-shot performance evaluation](./radar.pdf)
+![Cross-level zero-shot performance evaluation](./radar.png)
 
 ## 1. Introduction
 

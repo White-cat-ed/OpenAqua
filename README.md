@@ -17,5 +17,6 @@ Based on this dataset, we establish a comprehensive benchmark suite that encompa
 
 All data for OpenAqua (including images, annotation files, and reference physical prior files) can be accessed here: 
 
-Google Drive: [https://drive.google.com/drive/folders/1vo-b8BYGD2Kb2J__HTQK28yn5RzytMnz?usp=drive_link]
+Google Drive: https://drive.google.com/drive/folders/1vo-b8BYGD2Kb2J__HTQK28yn5RzytMnz?usp=drive_link
+
 Baidu Drive: 

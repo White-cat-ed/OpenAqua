@@ -1,8 +1,10 @@
 # OpenAqua: A Large-Scale Fine-Grained Dataset and Benchmark for Open Underwater Visual Perception
+
 <div align="center">
   <img src="./radar.png" alt="Model Performance Across Taxonomic Levels" width="500">
   <p><em>Cross-level zero-shot performance evaluation</em></p>
 </div>
+
 ## 1. Introduction
 
 Monitoring aquatic biodiversity is vital for maintaining global ecological balance. While advancements in computer vision have revolutionized underwater perception, existing datasets are predominantly limited to coarse-grained categories or lack spatial localization annotations, severely constraining the applicability of models for fine-grained biological identification in real-world scenarios. 

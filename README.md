@@ -20,3 +20,16 @@ All data for OpenAqua (including images, annotation files, and reference physica
 Google Drive: https://drive.google.com/drive/folders/1vo-b8BYGD2Kb2J__HTQK28yn5RzytMnz?usp=drive_link
 
 Baidu Drive: https://pan.baidu.com/s/1PJoL3u4vlRG03Y83nmsw0Q?pwd=7ist
+
+
+## ⚖️ License and Disclaimer
+
+The OpenAqua dataset (including its annotations, splits, and evaluation protocols) is released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0).
+
+**Data Sources Disclaimer:**
+The raw images within the OpenAqua dataset are aggregated from [FishNet] and [iNaturalist]. 
+- We do not claim ownership of the original images. The copyrights of the original images remain with their respective creators and owners.
+- The dataset is curated and provided **strictly for academic, non-commercial research purposes**. 
+- If you are a copyright holder and wish to have your image removed from this dataset, please contact us, and we will remove it promptly.
+
+By downloading and using this dataset, you agree to abide by these terms.

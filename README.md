@@ -28,7 +28,7 @@ To efficiently construct a large-scale and high-quality dataset, we adopted a ro
 #### Step 1: Model-Assisted Coarse Pre-annotation
 To establish a versatile fish detector with strong generalization capabilities across complex underwater conditions (e.g., high turbidity, uneven illumination), we aggregated multiple existing underwater object detection datasets. This collection includes Brackish, DeepFish, RUOD, UIIS10K, USIS10K, and Aquarium UOD. 
 
-Using this merged dataset, we trained a **YOLO11x** model as our baseline detector to generate pseudo-labels. During inference, the confidence threshold was intentionally set to `0.2` to maximize recall and capture as many potential targets as possible. To facilitate large-scale processing, we provide a [batch inference script](https://github.com/White-cat-ed/OpenAqua/blob/main/pseudo_boxlabel_inference_yolo11x.py) for efficient pseudo-boxlabel generation.
+Using this merged dataset, we trained a **YOLO11x** model as our baseline detector to generate pseudo-labels. During inference, the confidence threshold was intentionally set to `0.2` to maximize recall and capture as many potential targets as possible. To facilitate large-scale processing, we provide a [batch inference script](./pseudo_boxlabel_inference_yolo11x.py) for efficient pseudo-boxlabel generation.
 
 Below, we show the evaluation metrics of this baseline model alongside its complete training logs and pre-trained weights:
 
@@ -40,7 +40,7 @@ Below, we show the evaluation metrics of this baseline model alongside its compl
 To ensure the absolute precision of the final dataset, we utilized the [T-Rex Labeling Platform](https://www.trexlabel.com/) for the manual correction and verification of the initial bounding boxes generated in Step 1.
 
 #### Step 3: Instance Mask Annotation
-In the final stage, we leverage Segment Anything Model 2 (SAM 2) to convert the refined bounding boxes into high-quality instance segmentation masks. The human-corrected boxes serve as precise visual prompts for SAM 2. To facilitate large-scale processing, we provide a [batch inference script](https://github.com/White-cat-ed/OpenAqua/blob/main/pseudo_masklabel_inference_sam2.py) for efficient pseudo-masklabel generation. To ensure absolute accuracy, these generated masks undergo a secondary manual review and refinement process, resulting in the final fine-grained labels.
+In the final stage, we leverage Segment Anything Model 2 (SAM 2) to convert the refined bounding boxes into high-quality instance segmentation masks. The human-corrected boxes serve as precise visual prompts for SAM 2. To facilitate large-scale processing, we provide a [batch inference script](./pseudo_masklabel_inference_sam2.py) for efficient pseudo-masklabel generation. To ensure absolute accuracy, these generated masks undergo a secondary manual review and refinement process, resulting in the final fine-grained labels.
 
 We provide SAM 2 pre-train weight resource for the mask generation stage:
 
@@ -80,7 +80,7 @@ You can click the `link` in the table to quickly navigate to the open-source cod
 
 ### 🌐 Open-Vocabulary Object Detection Benchmark
 
-To facilitate reproduction and further research, we provide the specific configuration files and pre-trained weights for each model variant. The **Method** column links to the official source repository, while the **Config** and **Weights** columns point to the exact files used in our benchmark.
+To facilitate reproduction and further research, we provide the specific configuration files and pre-trained weights for each model variant. The **Method** column links to the official source repository, while the **Config** and **Weights** columns point to the exact files used in our benchmark. Additionally, we provide a detailed multi-level taxonomic vocabulary ([Class](./classes_class.json), [Order](./classes_order.json), [Family](./classes_family.json), [Genus](./classes_genus.json), [Species](./classes_species.json)).
 
 | Method (Repo) | Backbone | Params | Pre-trained Data | Config | Weights |
 | :--- | :--- | :---: | :--- | :---: | :---: |

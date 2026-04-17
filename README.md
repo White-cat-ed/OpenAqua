@@ -44,9 +44,9 @@ In the final stage, we leverage Segment Anything Model 2 (SAM 2) to convert the 
 
 We provide SAM 2 pre-train weight resource for the mask generation stage:
 
-| Annotator | Weights |
-| :--- | :---: |
-| [SAM 2](https://github.com/facebookresearch/sam2) | [sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt) |
+| Annotator | Code | Weights |
+| :--- | :---: | :---: |
+| SAM 2 | [link](https://github.com/facebookresearch/sam2) | [sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt) |
 
 ## 4. Benchmarks
 
